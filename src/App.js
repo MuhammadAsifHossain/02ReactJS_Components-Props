@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import SherOshayari from "./ChildComp";
+import OneImg from "./img/moon.jpg";
+import TwoImg from "./img/coin.jpeg";
+import ThreeImg from "./img/close.png";
+function ParentComp() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <SherOshayari
+        image={OneImg}
+        line1="us ke chehre ki chamak ke saamne saada laga "
+        line2="aasman pe chand puurā tha magar aadha laga"
+        shayar="IFTIKHAR NASEEM"
+      />
+      <SherOshayari
+        line1="hamāre paas yahī shā.irī kā sikka hai"
+        line2="ulaT-palaT ke isī ko chalānā paḌtā hai"
+        shayar="FARHAT EHSAS"
+        image={TwoImg}
+      />
+      <SherOshayari
+        line1="tum muḳhātib bhī ho qarīb bhī ho "
+        line2=" tum ko dekheñ ki tum se baat kareñ"
+        shayar="FIRAQ GORAKHPURI"
+        image={ThreeImg}
+      />
     </div>
   );
 }
-
-export default App;
+export default ParentComp;
