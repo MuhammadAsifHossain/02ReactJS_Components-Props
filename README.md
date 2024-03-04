@@ -9,4 +9,4 @@ This repository contains a simple React code example demonstrating the concept o
 * Image props are also utilized in the components.
 
 Images
-! [Example Image](./src/img/Screenshot.png)
+! [Example Image](./img/Screenshot.png)
